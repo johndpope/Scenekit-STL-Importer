@@ -1,10 +1,10 @@
 # Scenekit-STL-Importer
 
-A SceneKit importer for [STL files](1). STL files are commonly used in 3D-printing.
+A SceneKit importer for [STL files][1]. STL files are commonly used in 3D-printing.
 
 [1]: http://en.wikipedia.org/wiki/STL_(file_format)
 
-The following sample image shows an STL in [SketchUp](2), in [Cura](3) and in SceneKit - imported via this project:
+The following sample image shows an STL in [SketchUp][2], in [Cura][3] and in SceneKit - imported via this project:
 
 ![Sample](Samples/SampleImage.png "Sample")
 
