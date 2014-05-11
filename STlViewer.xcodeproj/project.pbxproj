@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4571737E191EAA9B00A960F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4571737D191EAA9B00A960F8 /* Cocoa.framework */; };
+		45717388191EAA9B00A960F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45717386191EAA9B00A960F8 /* InfoPlist.strings */; };
+		4571738A191EAA9B00A960F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45717389191EAA9B00A960F8 /* main.m */; };
+		4571738E191EAA9B00A960F8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4571738C191EAA9B00A960F8 /* Credits.rtf */; };
+		45717391191EAA9B00A960F8 /* CDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 45717390191EAA9B00A960F8 /* CDocument.m */; };
+		45717394191EAA9B00A960F8 /* CDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45717392191EAA9B00A960F8 /* CDocument.xib */; };
+		45717397191EAA9B00A960F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45717395191EAA9B00A960F8 /* MainMenu.xib */; };
+		45717399191EAA9B00A960F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45717398191EAA9B00A960F8 /* Images.xcassets */; };
+		457173A0191EAA9B00A960F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4571739F191EAA9B00A960F8 /* XCTest.framework */; };
+		457173A1191EAA9B00A960F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4571737D191EAA9B00A960F8 /* Cocoa.framework */; };
+		457173A9191EAA9B00A960F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457173A7191EAA9B00A960F8 /* InfoPlist.strings */; };
+		457173AB191EAA9B00A960F8 /* STlViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173AA191EAA9B00A960F8 /* STlViewerTests.m */; };
+		457173B5191EAB6B00A960F8 /* cube.stl in Resources */ = {isa = PBXBuildFile; fileRef = 457173B4191EAB6B00A960F8 /* cube.stl */; };
+		457173B8191EABD100A960F8 /* CSTLImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173B7191EABD100A960F8 /* CSTLImporter.m */; };
+		457173BC191EBDAD00A960F8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173BB191EBDAD00A960F8 /* CDataScanner.m */; };
+		457173C5191EFAD400A960F8 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173C4191EFAD400A960F8 /* QuickLook.framework */; };
+		457173C7191EFAD400A960F8 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173C6191EFAD400A960F8 /* ApplicationServices.framework */; };
+		457173C9191EFAD400A960F8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173C8191EFAD400A960F8 /* CoreServices.framework */; };
+		457173CB191EFAD400A960F8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173CA191EFAD400A960F8 /* CoreFoundation.framework */; };
+		457173D1191EFAD400A960F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457173CF191EFAD400A960F8 /* InfoPlist.strings */; };
+		457173D3191EFAD400A960F8 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 457173D2191EFAD400A960F8 /* GenerateThumbnailForURL.c */; };
+		457173D5191EFAD400A960F8 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 457173D4191EFAD400A960F8 /* GeneratePreviewForURL.c */; };
+		457173D7191EFAD400A960F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 457173D6191EFAD400A960F8 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		457173A2191EAA9B00A960F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45717372191EAA9B00A960F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45717379191EAA9B00A960F8;
+			remoteInfo = STlViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4571737A191EAA9B00A960F8 /* STlViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STlViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4571737D191EAA9B00A960F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		45717380191EAA9B00A960F8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		45717381191EAA9B00A960F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		45717382191EAA9B00A960F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45717385191EAA9B00A960F8 /* STlViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STlViewer-Info.plist"; sourceTree = "<group>"; };
+		45717387191EAA9B00A960F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45717389191EAA9B00A960F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4571738B191EAA9B00A960F8 /* STlViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STlViewer-Prefix.pch"; sourceTree = "<group>"; };
+		4571738D191EAA9B00A960F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4571738F191EAA9B00A960F8 /* CDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDocument.h; sourceTree = "<group>"; };
+		45717390191EAA9B00A960F8 /* CDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDocument.m; sourceTree = "<group>"; };
+		45717393191EAA9B00A960F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CDocument.xib; sourceTree = "<group>"; };
+		45717396191EAA9B00A960F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		45717398191EAA9B00A960F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4571739E191EAA9B00A960F8 /* STlViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STlViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4571739F191EAA9B00A960F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		457173A6191EAA9B00A960F8 /* STlViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STlViewerTests-Info.plist"; sourceTree = "<group>"; };
+		457173A8191EAA9B00A960F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		457173AA191EAA9B00A960F8 /* STlViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STlViewerTests.m; sourceTree = "<group>"; };
+		457173B4191EAB6B00A960F8 /* cube.stl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.stl; sourceTree = "<group>"; };
+		457173B6191EABD100A960F8 /* CSTLImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTLImporter.h; sourceTree = "<group>"; };
+		457173B7191EABD100A960F8 /* CSTLImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTLImporter.m; sourceTree = "<group>"; };
+		457173B9191EBCF700A960F8 /* Multicopter Rail Bracket.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Multicopter Rail Bracket.stl"; sourceTree = "<group>"; };
+		457173BA191EBDAD00A960F8 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		457173BB191EBDAD00A960F8 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		457173C3191EFAD400A960F8 /* STL Quicklook Plugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STL Quicklook Plugin.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		457173C4191EFAD400A960F8 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		457173C6191EFAD400A960F8 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		457173C8191EFAD400A960F8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		457173CA191EFAD400A960F8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		457173CE191EFAD400A960F8 /* STL Quicklook Plugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STL Quicklook Plugin-Info.plist"; sourceTree = "<group>"; };
+		457173D0191EFAD400A960F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		457173D2191EFAD400A960F8 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		457173D4191EFAD400A960F8 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		457173D6191EFAD400A960F8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		457173D8191EFAD400A960F8 /* STL Quicklook Plugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STL Quicklook Plugin-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45717377191EAA9B00A960F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4571737E191EAA9B00A960F8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4571739B191EAA9B00A960F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173A1191EAA9B00A960F8 /* Cocoa.framework in Frameworks */,
+				457173A0191EAA9B00A960F8 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457173BE191EFAD400A960F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173CB191EFAD400A960F8 /* CoreFoundation.framework in Frameworks */,
+				457173C5191EFAD400A960F8 /* QuickLook.framework in Frameworks */,
+				457173C9191EFAD400A960F8 /* CoreServices.framework in Frameworks */,
+				457173C7191EFAD400A960F8 /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45717371191EAA9B00A960F8 = {
+			isa = PBXGroup;
+			children = (
+				45717383191EAA9B00A960F8 /* STlViewer */,
+				457173A4191EAA9B00A960F8 /* STlViewerTests */,
+				457173CC191EFAD400A960F8 /* STL Quicklook Plugin */,
+				4571737C191EAA9B00A960F8 /* Frameworks */,
+				4571737B191EAA9B00A960F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4571737B191EAA9B00A960F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4571737A191EAA9B00A960F8 /* STlViewer.app */,
+				4571739E191EAA9B00A960F8 /* STlViewerTests.xctest */,
+				457173C3191EFAD400A960F8 /* STL Quicklook Plugin.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4571737C191EAA9B00A960F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4571737D191EAA9B00A960F8 /* Cocoa.framework */,
+				4571739F191EAA9B00A960F8 /* XCTest.framework */,
+				457173C4191EFAD400A960F8 /* QuickLook.framework */,
+				457173C6191EFAD400A960F8 /* ApplicationServices.framework */,
+				457173C8191EFAD400A960F8 /* CoreServices.framework */,
+				457173CA191EFAD400A960F8 /* CoreFoundation.framework */,
+				4571737F191EAA9B00A960F8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4571737F191EAA9B00A960F8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45717380191EAA9B00A960F8 /* AppKit.framework */,
+				45717381191EAA9B00A960F8 /* CoreData.framework */,
+				45717382191EAA9B00A960F8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		45717383191EAA9B00A960F8 /* STlViewer */ = {
+			isa = PBXGroup;
+			children = (
+				4571738F191EAA9B00A960F8 /* CDocument.h */,
+				45717390191EAA9B00A960F8 /* CDocument.m */,
+				457173B6191EABD100A960F8 /* CSTLImporter.h */,
+				457173B7191EABD100A960F8 /* CSTLImporter.m */,
+				457173BA191EBDAD00A960F8 /* CDataScanner.h */,
+				457173BB191EBDAD00A960F8 /* CDataScanner.m */,
+				457173B4191EAB6B00A960F8 /* cube.stl */,
+				457173B9191EBCF700A960F8 /* Multicopter Rail Bracket.stl */,
+				45717392191EAA9B00A960F8 /* CDocument.xib */,
+				45717395191EAA9B00A960F8 /* MainMenu.xib */,
+				45717398191EAA9B00A960F8 /* Images.xcassets */,
+				45717384191EAA9B00A960F8 /* Supporting Files */,
+			);
+			path = STlViewer;
+			sourceTree = "<group>";
+		};
+		45717384191EAA9B00A960F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45717385191EAA9B00A960F8 /* STlViewer-Info.plist */,
+				45717386191EAA9B00A960F8 /* InfoPlist.strings */,
+				45717389191EAA9B00A960F8 /* main.m */,
+				4571738B191EAA9B00A960F8 /* STlViewer-Prefix.pch */,
+				4571738C191EAA9B00A960F8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		457173A4191EAA9B00A960F8 /* STlViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				457173AA191EAA9B00A960F8 /* STlViewerTests.m */,
+				457173A5191EAA9B00A960F8 /* Supporting Files */,
+			);
+			path = STlViewerTests;
+			sourceTree = "<group>";
+		};
+		457173A5191EAA9B00A960F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				457173A6191EAA9B00A960F8 /* STlViewerTests-Info.plist */,
+				457173A7191EAA9B00A960F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		457173CC191EFAD400A960F8 /* STL Quicklook Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				457173D2191EFAD400A960F8 /* GenerateThumbnailForURL.c */,
+				457173D4191EFAD400A960F8 /* GeneratePreviewForURL.c */,
+				457173D6191EFAD400A960F8 /* main.c */,
+				457173CD191EFAD400A960F8 /* Supporting Files */,
+			);
+			path = "STL Quicklook Plugin";
+			sourceTree = "<group>";
+		};
+		457173CD191EFAD400A960F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				457173CE191EFAD400A960F8 /* STL Quicklook Plugin-Info.plist */,
+				457173CF191EFAD400A960F8 /* InfoPlist.strings */,
+				457173D8191EFAD400A960F8 /* STL Quicklook Plugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		457173BF191EFAD400A960F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45717379191EAA9B00A960F8 /* STlViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457173AE191EAA9B00A960F8 /* Build configuration list for PBXNativeTarget "STlViewer" */;
+			buildPhases = (
+				45717376191EAA9B00A960F8 /* Sources */,
+				45717377191EAA9B00A960F8 /* Frameworks */,
+				45717378191EAA9B00A960F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STlViewer;
+			productName = STlViewer;
+			productReference = 4571737A191EAA9B00A960F8 /* STlViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4571739D191EAA9B00A960F8 /* STlViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457173B1191EAA9B00A960F8 /* Build configuration list for PBXNativeTarget "STlViewerTests" */;
+			buildPhases = (
+				4571739A191EAA9B00A960F8 /* Sources */,
+				4571739B191EAA9B00A960F8 /* Frameworks */,
+				4571739C191EAA9B00A960F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				457173A3191EAA9B00A960F8 /* PBXTargetDependency */,
+			);
+			name = STlViewerTests;
+			productName = STlViewerTests;
+			productReference = 4571739E191EAA9B00A960F8 /* STlViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		457173C2191EFAD400A960F8 /* STL Quicklook Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457173D9191EFAD400A960F8 /* Build configuration list for PBXNativeTarget "STL Quicklook Plugin" */;
+			buildPhases = (
+				457173BD191EFAD400A960F8 /* Sources */,
+				457173BE191EFAD400A960F8 /* Frameworks */,
+				457173BF191EFAD400A960F8 /* Headers */,
+				457173C0191EFAD400A960F8 /* Resources */,
+				457173C1191EFAD400A960F8 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STL Quicklook Plugin";
+			productName = "STL Quicklook Plugin";
+			productReference = 457173C3191EFAD400A960F8 /* STL Quicklook Plugin.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45717372191EAA9B00A960F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = C;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = schwa;
+				TargetAttributes = {
+					4571739D191EAA9B00A960F8 = {
+						TestTargetID = 45717379191EAA9B00A960F8;
+					};
+				};
+			};
+			buildConfigurationList = 45717375191EAA9B00A960F8 /* Build configuration list for PBXProject "STlViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45717371191EAA9B00A960F8;
+			productRefGroup = 4571737B191EAA9B00A960F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45717379191EAA9B00A960F8 /* STlViewer */,
+				4571739D191EAA9B00A960F8 /* STlViewerTests */,
+				457173C2191EFAD400A960F8 /* STL Quicklook Plugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45717378191EAA9B00A960F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173B5191EAB6B00A960F8 /* cube.stl in Resources */,
+				45717388191EAA9B00A960F8 /* InfoPlist.strings in Resources */,
+				45717399191EAA9B00A960F8 /* Images.xcassets in Resources */,
+				45717394191EAA9B00A960F8 /* CDocument.xib in Resources */,
+				4571738E191EAA9B00A960F8 /* Credits.rtf in Resources */,
+				45717397191EAA9B00A960F8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4571739C191EAA9B00A960F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173A9191EAA9B00A960F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457173C0191EFAD400A960F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173D1191EFAD400A960F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		457173C1191EFAD400A960F8 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45717376191EAA9B00A960F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173BC191EBDAD00A960F8 /* CDataScanner.m in Sources */,
+				45717391191EAA9B00A960F8 /* CDocument.m in Sources */,
+				4571738A191EAA9B00A960F8 /* main.m in Sources */,
+				457173B8191EABD100A960F8 /* CSTLImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4571739A191EAA9B00A960F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173AB191EAA9B00A960F8 /* STlViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457173BD191EFAD400A960F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457173D3191EFAD400A960F8 /* GenerateThumbnailForURL.c in Sources */,
+				457173D5191EFAD400A960F8 /* GeneratePreviewForURL.c in Sources */,
+				457173D7191EFAD400A960F8 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		457173A3191EAA9B00A960F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45717379191EAA9B00A960F8 /* STlViewer */;
+			targetProxy = 457173A2191EAA9B00A960F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45717386191EAA9B00A960F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45717387191EAA9B00A960F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4571738C191EAA9B00A960F8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4571738D191EAA9B00A960F8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		45717392191EAA9B00A960F8 /* CDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45717393191EAA9B00A960F8 /* Base */,
+			);
+			name = CDocument.xib;
+			sourceTree = "<group>";
+		};
+		45717395191EAA9B00A960F8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45717396191EAA9B00A960F8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		457173A7191EAA9B00A960F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457173A8191EAA9B00A960F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		457173CF191EFAD400A960F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457173D0191EFAD400A960F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		457173AC191EAA9B00A960F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		457173AD191EAA9B00A960F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		457173AF191EAA9B00A960F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STlViewer/STlViewer-Prefix.pch";
+				INFOPLIST_FILE = "STlViewer/STlViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		457173B0191EAA9B00A960F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STlViewer/STlViewer-Prefix.pch";
+				INFOPLIST_FILE = "STlViewer/STlViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		457173B2191EAA9B00A960F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STlViewer.app/Contents/MacOS/STlViewer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STlViewer/STlViewer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "STlViewerTests/STlViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		457173B3191EAA9B00A960F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STlViewer.app/Contents/MacOS/STlViewer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STlViewer/STlViewer-Prefix.pch";
+				INFOPLIST_FILE = "STlViewerTests/STlViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		457173DA191EFAD400A960F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STL Quicklook Plugin/STL Quicklook Plugin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "STL Quicklook Plugin/STL Quicklook Plugin-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		457173DB191EFAD400A960F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "STL Quicklook Plugin/STL Quicklook Plugin-Prefix.pch";
+				INFOPLIST_FILE = "STL Quicklook Plugin/STL Quicklook Plugin-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45717375191EAA9B00A960F8 /* Build configuration list for PBXProject "STlViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457173AC191EAA9B00A960F8 /* Debug */,
+				457173AD191EAA9B00A960F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		457173AE191EAA9B00A960F8 /* Build configuration list for PBXNativeTarget "STlViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457173AF191EAA9B00A960F8 /* Debug */,
+				457173B0191EAA9B00A960F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		457173B1191EAA9B00A960F8 /* Build configuration list for PBXNativeTarget "STlViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457173B2191EAA9B00A960F8 /* Debug */,
+				457173B3191EAA9B00A960F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		457173D9191EFAD400A960F8 /* Build configuration list for PBXNativeTarget "STL Quicklook Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457173DA191EFAD400A960F8 /* Debug */,
+				457173DB191EFAD400A960F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45717372191EAA9B00A960F8 /* Project object */;
+}
