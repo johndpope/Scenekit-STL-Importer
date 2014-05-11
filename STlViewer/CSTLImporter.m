@@ -25,11 +25,20 @@
 
 @implementation CSTLImporter
 
-- (SCNNode *)importBinaryFile:(NSError *__autoreleasing *)outError
+- (SCNNode *)importFile:(NSURL *)inURL error:(NSError *__autoreleasing *)outError
     {
-    NSURL *theURL = [NSURL fileURLWithPath:@"/Users/schwa/Desktop/STlViewer/STlViewer/Multicopter Rail Bracket.stl"];
+    SCNNode *theNode = [self importBinaryFile:inURL error:NULL];
+    if (theNode == NULL)
+        {
+        theNode = [self importTextFile:inURL error:outError];
+        }
+    return theNode;
+    }
+
+- (SCNNode *)importBinaryFile:(NSURL *)inURL error:(NSError *__autoreleasing *)outError
+    {
     NSError *theError = NULL;
-    NSData *theData = [NSData dataWithContentsOfURL:theURL options:0 error:&theError];
+    NSData *theData = [NSData dataWithContentsOfURL:inURL options:0 error:&theError];
 
     CDataScanner *theScanner = [[CDataScanner alloc] initWithData:theData];
     theScanner.endianness = DataScannerEndianness_Little;
@@ -99,12 +108,11 @@
     return theNode;
     }
 
-- (SCNNode *)importTextFile:(NSError *__autoreleasing *)outError
+- (SCNNode *)importTextFile:(NSURL *)inURL error:(NSError *__autoreleasing *)outError
     {
-    NSURL *theURL = [NSURL fileURLWithPath:@"/Users/schwa/Desktop/STlViewer/STlViewer/cube.stl"];
     NSStringEncoding theEncoding = NSASCIIStringEncoding;
     NSError *theError = NULL;
-    NSString *theString = [NSString stringWithContentsOfURL:theURL usedEncoding:&theEncoding error:&theError];
+    NSString *theString = [NSString stringWithContentsOfURL:inURL usedEncoding:&theEncoding error:&theError];
     NSScanner *theScanner = [NSScanner scannerWithString:theString];
 
     if ([theScanner scanString:@"solid" intoString:NULL] == NO)

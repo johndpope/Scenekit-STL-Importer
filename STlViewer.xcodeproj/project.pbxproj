@@ -19,7 +19,7 @@
 		457173A1191EAA9B00A960F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4571737D191EAA9B00A960F8 /* Cocoa.framework */; };
 		457173A9191EAA9B00A960F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457173A7191EAA9B00A960F8 /* InfoPlist.strings */; };
 		457173AB191EAA9B00A960F8 /* STlViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173AA191EAA9B00A960F8 /* STlViewerTests.m */; };
-		457173B5191EAB6B00A960F8 /* cube.stl in Resources */ = {isa = PBXBuildFile; fileRef = 457173B4191EAB6B00A960F8 /* cube.stl */; };
+		457173B5191EAB6B00A960F8 /* cube_corner.stl in Resources */ = {isa = PBXBuildFile; fileRef = 457173B4191EAB6B00A960F8 /* cube_corner.stl */; };
 		457173B8191EABD100A960F8 /* CSTLImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173B7191EABD100A960F8 /* CSTLImporter.m */; };
 		457173BC191EBDAD00A960F8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173BB191EBDAD00A960F8 /* CDataScanner.m */; };
 		457173C5191EFAD400A960F8 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173C4191EFAD400A960F8 /* QuickLook.framework */; };
@@ -63,7 +63,7 @@
 		457173A6191EAA9B00A960F8 /* STlViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STlViewerTests-Info.plist"; sourceTree = "<group>"; };
 		457173A8191EAA9B00A960F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		457173AA191EAA9B00A960F8 /* STlViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STlViewerTests.m; sourceTree = "<group>"; };
-		457173B4191EAB6B00A960F8 /* cube.stl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.stl; sourceTree = "<group>"; };
+		457173B4191EAB6B00A960F8 /* cube_corner.stl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube_corner.stl; sourceTree = "<group>"; };
 		457173B6191EABD100A960F8 /* CSTLImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTLImporter.h; sourceTree = "<group>"; };
 		457173B7191EABD100A960F8 /* CSTLImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTLImporter.m; sourceTree = "<group>"; };
 		457173B9191EBCF700A960F8 /* Multicopter Rail Bracket.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Multicopter Rail Bracket.stl"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				457173B7191EABD100A960F8 /* CSTLImporter.m */,
 				457173BA191EBDAD00A960F8 /* CDataScanner.h */,
 				457173BB191EBDAD00A960F8 /* CDataScanner.m */,
-				457173B4191EAB6B00A960F8 /* cube.stl */,
+				457173B4191EAB6B00A960F8 /* cube_corner.stl */,
 				457173B9191EBCF700A960F8 /* Multicopter Rail Bracket.stl */,
 				45717392191EAA9B00A960F8 /* CDocument.xib */,
 				45717395191EAA9B00A960F8 /* MainMenu.xib */,
@@ -336,7 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457173B5191EAB6B00A960F8 /* cube.stl in Resources */,
+				457173B5191EAB6B00A960F8 /* cube_corner.stl in Resources */,
 				45717388191EAA9B00A960F8 /* InfoPlist.strings in Resources */,
 				45717399191EAA9B00A960F8 /* Images.xcassets in Resources */,
 				45717394191EAA9B00A960F8 /* CDocument.xib in Resources */,
@@ -650,6 +650,7 @@
 				457173B0191EAA9B00A960F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		457173B1191EAA9B00A960F8 /* Build configuration list for PBXNativeTarget "STlViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +659,7 @@
 				457173B3191EAA9B00A960F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		457173D9191EFAD400A960F8 /* Build configuration list for PBXNativeTarget "STL Quicklook Plugin" */ = {
 			isa = XCConfigurationList;
@@ -666,6 +668,7 @@
 				457173DB191EFAD400A960F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,8 @@
 
 @interface CSTLImporter : NSObject
 
-- (SCNNode *)importBinaryFile:(NSError *__autoreleasing *)outError;
-- (SCNNode *)importTextFile:(NSError *__autoreleasing *)outError;
+- (SCNNode *)importFile:(NSURL *)inURL error:(NSError *__autoreleasing *)outError;
+- (SCNNode *)importBinaryFile:(NSURL *)inURL error:(NSError *__autoreleasing *)outError;
+- (SCNNode *)importTextFile:(NSURL *)inURL error:(NSError *__autoreleasing *)outError;
 
 @end

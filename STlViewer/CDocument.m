@@ -24,56 +24,34 @@
 @implementation CDocument
 
 - (id)init
-{
-    self = [super init];
-    if (self) {
+    {
+    if ((self = [super init]) != NULL)
+        {
         // Add your subclass-specific initialization here.
         _scene = [SCNScene scene];
-    }
+        }
     return self;
-}
+    }
 
 - (NSString *)windowNibName
-{
+    {
     return @"CDocument";
-}
+    }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
-{
+    {
     [super windowControllerDidLoadNib:aController];
 
     self.sceneView.showsStatistics = YES;
-
-    self.scene = [SCNScene scene];
-
-//    SCNNode *theDemoNode = [SCNNode nodeWithGeometry:[SCNSphere sphereWithRadius:1.0]];
-//    [self.scene.rootNode addChildNode:theDemoNode];
-
-    NSError *theError = NULL;
-    SCNNode *theModelNode = [[[CSTLImporter alloc] init] importBinaryFile:&theError];
-    NSLog(@"%@ %@", theModelNode, theError);
-    [self.scene.rootNode addChildNode:theModelNode];
-
     self.sceneView.scene = self.scene;
-}
+    }
 
-+ (BOOL)autosavesInPlace
-{
+- (BOOL)readFromURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError **)outError;
+    {
+    NSError *theError = NULL;
+    SCNNode *theModelNode = [[[CSTLImporter alloc] init] importFile:url error:outError];
+    [self.scene.rootNode addChildNode:theModelNode];
     return YES;
-}
-
-- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
-{
-    NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
-    @throw exception;
-    return nil;
-}
-
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
-{
-    NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
-    @throw exception;
-    return YES;
-}
+    }
 
 @end
