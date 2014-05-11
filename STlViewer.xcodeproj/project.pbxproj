@@ -22,14 +22,6 @@
 		457173B5191EAB6B00A960F8 /* cube_corner.stl in Resources */ = {isa = PBXBuildFile; fileRef = 457173B4191EAB6B00A960F8 /* cube_corner.stl */; };
 		457173B8191EABD100A960F8 /* CSTLImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173B7191EABD100A960F8 /* CSTLImporter.m */; };
 		457173BC191EBDAD00A960F8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 457173BB191EBDAD00A960F8 /* CDataScanner.m */; };
-		457173C5191EFAD400A960F8 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173C4191EFAD400A960F8 /* QuickLook.framework */; };
-		457173C7191EFAD400A960F8 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173C6191EFAD400A960F8 /* ApplicationServices.framework */; };
-		457173C9191EFAD400A960F8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173C8191EFAD400A960F8 /* CoreServices.framework */; };
-		457173CB191EFAD400A960F8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457173CA191EFAD400A960F8 /* CoreFoundation.framework */; };
-		457173D1191EFAD400A960F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457173CF191EFAD400A960F8 /* InfoPlist.strings */; };
-		457173D3191EFAD400A960F8 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 457173D2191EFAD400A960F8 /* GenerateThumbnailForURL.c */; };
-		457173D5191EFAD400A960F8 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 457173D4191EFAD400A960F8 /* GeneratePreviewForURL.c */; };
-		457173D7191EFAD400A960F8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 457173D6191EFAD400A960F8 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,17 +61,10 @@
 		457173B9191EBCF700A960F8 /* Multicopter Rail Bracket.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Multicopter Rail Bracket.stl"; sourceTree = "<group>"; };
 		457173BA191EBDAD00A960F8 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
 		457173BB191EBDAD00A960F8 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
-		457173C3191EFAD400A960F8 /* STL Quicklook Plugin.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STL Quicklook Plugin.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		457173C4191EFAD400A960F8 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		457173C6191EFAD400A960F8 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		457173C8191EFAD400A960F8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		457173CA191EFAD400A960F8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		457173CE191EFAD400A960F8 /* STL Quicklook Plugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STL Quicklook Plugin-Info.plist"; sourceTree = "<group>"; };
-		457173D0191EFAD400A960F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		457173D2191EFAD400A960F8 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		457173D4191EFAD400A960F8 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
-		457173D6191EFAD400A960F8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		457173D8191EFAD400A960F8 /* STL Quicklook Plugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STL Quicklook Plugin-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,17 +85,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		457173BE191EFAD400A960F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				457173CB191EFAD400A960F8 /* CoreFoundation.framework in Frameworks */,
-				457173C5191EFAD400A960F8 /* QuickLook.framework in Frameworks */,
-				457173C9191EFAD400A960F8 /* CoreServices.framework in Frameworks */,
-				457173C7191EFAD400A960F8 /* ApplicationServices.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,7 +93,6 @@
 			children = (
 				45717383191EAA9B00A960F8 /* STlViewer */,
 				457173A4191EAA9B00A960F8 /* STlViewerTests */,
-				457173CC191EFAD400A960F8 /* STL Quicklook Plugin */,
 				4571737C191EAA9B00A960F8 /* Frameworks */,
 				4571737B191EAA9B00A960F8 /* Products */,
 			);
@@ -130,7 +103,6 @@
 			children = (
 				4571737A191EAA9B00A960F8 /* STlViewer.app */,
 				4571739E191EAA9B00A960F8 /* STlViewerTests.xctest */,
-				457173C3191EFAD400A960F8 /* STL Quicklook Plugin.qlgenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,38 +180,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		457173CC191EFAD400A960F8 /* STL Quicklook Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				457173D2191EFAD400A960F8 /* GenerateThumbnailForURL.c */,
-				457173D4191EFAD400A960F8 /* GeneratePreviewForURL.c */,
-				457173D6191EFAD400A960F8 /* main.c */,
-				457173CD191EFAD400A960F8 /* Supporting Files */,
-			);
-			path = "STL Quicklook Plugin";
-			sourceTree = "<group>";
-		};
-		457173CD191EFAD400A960F8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				457173CE191EFAD400A960F8 /* STL Quicklook Plugin-Info.plist */,
-				457173CF191EFAD400A960F8 /* InfoPlist.strings */,
-				457173D8191EFAD400A960F8 /* STL Quicklook Plugin-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		457173BF191EFAD400A960F8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		45717379191EAA9B00A960F8 /* STlViewer */ = {
@@ -277,25 +218,6 @@
 			productReference = 4571739E191EAA9B00A960F8 /* STlViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		457173C2191EFAD400A960F8 /* STL Quicklook Plugin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 457173D9191EFAD400A960F8 /* Build configuration list for PBXNativeTarget "STL Quicklook Plugin" */;
-			buildPhases = (
-				457173BD191EFAD400A960F8 /* Sources */,
-				457173BE191EFAD400A960F8 /* Frameworks */,
-				457173BF191EFAD400A960F8 /* Headers */,
-				457173C0191EFAD400A960F8 /* Resources */,
-				457173C1191EFAD400A960F8 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "STL Quicklook Plugin";
-			productName = "STL Quicklook Plugin";
-			productReference = 457173C3191EFAD400A960F8 /* STL Quicklook Plugin.qlgenerator */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -326,7 +248,6 @@
 			targets = (
 				45717379191EAA9B00A960F8 /* STlViewer */,
 				4571739D191EAA9B00A960F8 /* STlViewerTests */,
-				457173C2191EFAD400A960F8 /* STL Quicklook Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -353,25 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		457173C0191EFAD400A960F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				457173D1191EFAD400A960F8 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		457173C1191EFAD400A960F8 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45717376191EAA9B00A960F8 /* Sources */ = {
@@ -390,16 +293,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				457173AB191EAA9B00A960F8 /* STlViewerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		457173BD191EFAD400A960F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				457173D3191EFAD400A960F8 /* GenerateThumbnailForURL.c in Sources */,
-				457173D5191EFAD400A960F8 /* GeneratePreviewForURL.c in Sources */,
-				457173D7191EFAD400A960F8 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,14 +343,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				457173A8191EAA9B00A960F8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		457173CF191EFAD400A960F8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				457173D0191EFAD400A960F8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -601,36 +486,6 @@
 			};
 			name = Release;
 		};
-		457173DA191EFAD400A960F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "STL Quicklook Plugin/STL Quicklook Plugin-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "STL Quicklook Plugin/STL Quicklook Plugin-Info.plist";
-				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = qlgenerator;
-			};
-			name = Debug;
-		};
-		457173DB191EFAD400A960F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "STL Quicklook Plugin/STL Quicklook Plugin-Prefix.pch";
-				INFOPLIST_FILE = "STL Quicklook Plugin/STL Quicklook Plugin-Info.plist";
-				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = qlgenerator;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -657,15 +512,6 @@
 			buildConfigurations = (
 				457173B2191EAA9B00A960F8 /* Debug */,
 				457173B3191EAA9B00A960F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		457173D9191EFAD400A960F8 /* Build configuration list for PBXNativeTarget "STL Quicklook Plugin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				457173DA191EFAD400A960F8 /* Debug */,
-				457173DB191EFAD400A960F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
