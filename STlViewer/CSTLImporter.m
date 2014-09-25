@@ -50,7 +50,7 @@
         return NO;
         }
     NSString *theHeaderString = [[NSString alloc] initWithData:theHeaderData encoding:NSASCIIStringEncoding];
-    if ([theHeaderString hasPrefix:@"solid "] == YES)
+    if ([theHeaderString hasPrefix:@"solid "] == YES && NO)
         {
         DO_ERROR(outError, @"TODO_DOMAIN", -1, @"File looks like a text file.");
         return NO;

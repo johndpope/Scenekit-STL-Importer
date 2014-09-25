@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45259AF0199E7E3C0074F46C /* DataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45259AEF199E7E3C0074F46C /* DataScanner.swift */; };
 		4571737E191EAA9B00A960F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4571737D191EAA9B00A960F8 /* Cocoa.framework */; };
 		45717388191EAA9B00A960F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45717386191EAA9B00A960F8 /* InfoPlist.strings */; };
 		4571738A191EAA9B00A960F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45717389191EAA9B00A960F8 /* main.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45259AEE199E7E3C0074F46C /* STlViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STlViewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		45259AEF199E7E3C0074F46C /* DataScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataScanner.swift; sourceTree = "<group>"; };
 		4571737A191EAA9B00A960F8 /* STlViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STlViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4571737D191EAA9B00A960F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		45717380191EAA9B00A960F8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -140,12 +143,14 @@
 				457173B7191EABD100A960F8 /* CSTLImporter.m */,
 				457173BA191EBDAD00A960F8 /* CDataScanner.h */,
 				457173BB191EBDAD00A960F8 /* CDataScanner.m */,
+				45259AEF199E7E3C0074F46C /* DataScanner.swift */,
 				457173B4191EAB6B00A960F8 /* cube_corner.stl */,
 				457173B9191EBCF700A960F8 /* Multicopter Rail Bracket.stl */,
 				45717392191EAA9B00A960F8 /* CDocument.xib */,
 				45717395191EAA9B00A960F8 /* MainMenu.xib */,
 				45717398191EAA9B00A960F8 /* Images.xcassets */,
 				45717384191EAA9B00A960F8 /* Supporting Files */,
+				45259AEE199E7E3C0074F46C /* STlViewer-Bridging-Header.h */,
 			);
 			path = STlViewer;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			files = (
 				457173BC191EBDAD00A960F8 /* CDataScanner.m in Sources */,
 				45717391191EAA9B00A960F8 /* CDocument.m in Sources */,
+				45259AF0199E7E3C0074F46C /* DataScanner.swift in Sources */,
 				4571738A191EAA9B00A960F8 /* main.m in Sources */,
 				457173B8191EABD100A960F8 /* CSTLImporter.m in Sources */,
 			);
@@ -424,11 +430,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STlViewer/STlViewer-Prefix.pch";
 				INFOPLIST_FILE = "STlViewer/STlViewer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "STlViewer/STlViewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -437,11 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STlViewer/STlViewer-Prefix.pch";
 				INFOPLIST_FILE = "STlViewer/STlViewer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "STlViewer/STlViewer-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
